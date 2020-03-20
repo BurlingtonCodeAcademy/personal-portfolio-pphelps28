@@ -1,0 +1,207 @@
+@import url(//db.onlinewebfonts.com/c/6ecff1acfc72a3653c6b2ff78e7f6b9c?family=Apple+Symbols);
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', 'Noto Sans', 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+em {
+    color: rgb(250, 16, 250);
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+li {
+    list-style-type: none;
+}
+
+em.about {
+    color: rgb(126, 145, 18);
+}
+
+emphasis {
+    /* color: rgba(236, 86, 0, 0.979); */
+    color: rgb(255, 158, 13);
+    font-weight: 220;
+    font-size: .95em;
+}
+
+.header-item {
+    margin: 15px 60px 15px 15px;
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+.header-item:hover {
+    color: rgb(255, 158, 13);
+    transform: scale(1.02);
+}
+
+#background-layer {
+    margin-left: calc(50vw - 50px);
+    width: calc(95vw - 610px);
+    margin-top: 60px;
+    height: calc(100vh - 150px);
+    position: fixed;
+    background-image: url('./images/Paul_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 20%;
+    transition: opacity .2s ease-in;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 60px;
+    width: calc(90vw);
+    color: rgb(245, 245, 245);
+    font-size: 16px;
+    padding-left: calc(6vw - 30px);
+    background-color: rgb(15, 15, 15);
+    opacity: .85;
+    z-index: 20;
+    transition: opacity .2s ease-in;
+}
+
+#navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    padding: 10px 55px 15px 0;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    margin-left: calc(40vw - 600px);
+}
+
+#home {
+    margin-left: 0px;
+}
+
+#content-area {
+    padding-left: calc(6vw - 30px);
+    display: flex;
+    flex-direction: column;
+    width: calc(350px + 11vw);
+    justify-content: flex-end;
+    padding-top: 10vh;
+}
+
+#page-wrapper {
+    padding-top: 50px;
+    color: whitesmoke;
+}
+
+/* Page content */
+
+/* Home Page */
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    padding: 10px 0 0 0;
+}
+
+.small-heading {
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+
+.large-heading {
+    padding-bottom: 20px;
+    font-size: 3.5em;
+}
+
+.main-text {
+    font-size: 1.2em;
+    color: rgba(245, 245, 245, 0.788);
+    line-height: 1.6;
+}
+
+.inline-link {
+    margin: 20px 0px 20px 0px
+}
+
+/* about page */
+
+.about-text {
+    font-size: 1.1em;
+    color: rgba(245, 245, 245, 0.87);
+    line-height: 1.4;
+    margin: 10px 0 10px 0;
+}
+
+#about-heading {
+    padding-bottom: 20px;
+    font-size: 3em;
+}
+
+#skills-section {
+    display: flex;
+    justify-content: space-between;
+    opacity: .95;
+    padding: 5px 150px 0px 0px;
+    border-radius: 5%;
+}
+
+#skills-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#skills-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-header {
+    color: rgb(240, 37, 240);
+}
+
+/* Media Queries */
+
+@media screen and (max-width:920px) {
+    #background-layer {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:775px) {
+    #header {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #background-layer {
+        visibility: hidden;
+    }
+    #header {
+        visibility: hidden;
+    }
+}
