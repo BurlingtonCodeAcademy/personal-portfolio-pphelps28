@@ -10,23 +10,22 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      headerEmphasis: 'home'
+      headerEmphasis: 'home',
+      fadeInClass: "loaded"
     }
-
-
   }
+
   headerEmphasis = (event) => {
     console.log(event.target.className)
     this.setState({ headerEmphasis: event.target.id })
   }
-
 
   render() {
     return (
       <>
         <div id="background-layer"></div>
         <Navbar headerEmphasis={this.headerEmphasis} emphasized={this.state.headerEmphasis} />
-        <div id="content-area">
+        <div id="content-area" >
           < Route exact path='/'>
             <Home />
           </Route >

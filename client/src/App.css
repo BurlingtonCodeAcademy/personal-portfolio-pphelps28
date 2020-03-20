@@ -60,7 +60,7 @@ emphasis {
     background-size: cover;
     z-index: -1;
     border-radius: 20%;
-    transition: opacity .2s ease-in;
+    transition: opacity .5s ease-in;
 }
 
 #header {
@@ -109,6 +109,10 @@ emphasis {
 #page-wrapper {
     padding-top: 50px;
     color: whitesmoke;
+    opacity: 0;
+    transition: all .5s;
+    transform: translate(0px, -50px);
+    opacity: 1
 }
 
 /* Page content */
@@ -151,10 +155,18 @@ p {
     line-height: 1.4;
     margin: 10px 0 10px 0;
 }
-
+#heading-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start
+}
 #about-heading {
     padding-bottom: 20px;
     font-size: 3em;
+}
+
+#about-heading2 {
+    font-size: 1.5em;
 }
 
 #skills-section {
@@ -177,6 +189,8 @@ p {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin:10px;
+    margin-left: 0;
 }
 
 .list-header {
@@ -185,7 +199,7 @@ p {
 
 /* Media Queries */
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:850px) {
     #background-layer {
         opacity: 0;
     }
@@ -197,7 +211,7 @@ p {
     }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:768px) {
     #background-layer {
         visibility: hidden;
     }
