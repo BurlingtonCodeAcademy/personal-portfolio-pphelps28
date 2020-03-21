@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 export class Work extends Component {
     render() {
         return (
-            <div id="heading-wrapper">
+            <div id="heading-wrapper" className={this.props.animation}>
                 <h1 id="about-heading2"><emphasis><strong>What I know</strong></emphasis><br /></h1>
                 <div id="skills-section">
                     <div id="skills-wrapper2">
