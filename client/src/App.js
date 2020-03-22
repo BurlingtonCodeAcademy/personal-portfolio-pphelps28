@@ -7,10 +7,10 @@ import About from './components/About'
 import Work from './components/Work'
 import Play from './components/Play';
 import Background from './components/Background'
-import homeImage from './images/home.jpg'
+import homeImage from './images/home.svg'
 import aboutImage from './images/about.jpg'
 import workImage from './images/work.jpg'
-import playImage from './images/playPage.svg'
+import playImage from './images/play.svg'
 
 class App extends Component {
   render() {
@@ -19,7 +19,7 @@ class App extends Component {
         <Navbar currentPage={this.props.currentPage} highlightHeader={this.props.highlightHeader} setPage={this.props.setPage} />
         <div id="content-area" >
           < Route exact path='/'>
-            <Background animation={this.props.panin} image={playImage} />
+            <Background animation={this.props.panin} image={homeImage} />
             <Home animation={this.props.slidein} />
           </Route >
           <Route path='/about'>
@@ -31,7 +31,7 @@ class App extends Component {
             <Work animation={this.props.fadeout} />
           </Route>
           <Route path='/play'>
-            <Background image={homeImage} animation={this.props.fadein}/>
+            <Background animation={this.props.rotate} image={playImage}/>
             <Play animation={this.props.slidein}/>
           </Route>
           <Route path='/contact'>

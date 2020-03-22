@@ -13,7 +13,8 @@ class Router extends Component {
             panin: '',
             rotatein: '',
             fadein: '',
-            fadeout: ''
+            fadeout: '',
+            rotate: ''
         }
     }
     // add more
@@ -23,7 +24,7 @@ class Router extends Component {
         //sets state animations so they trigger on load
         this.setState(
             {
-                slideup: 'slideup', slidein: 'slidein', panin: 'panin', rotatein: 'rotatein', fadein: 'fadein', fadeout: 'fadeout'
+                slideup: 'slideup', slidein: 'slidein', panin: 'panin', rotatein: 'rotatein', fadein: 'fadein', fadeout: 'fadeout', rotate: 'rotate'
             })
 
         window.onpopstate = this.browserButtonHandler
@@ -35,7 +36,7 @@ class Router extends Component {
     }
     //removes animations so they will re-trigger on next render
     componentWillUnmount = () => {
-        this.setState({ slideup: '', slidein: '', panin: '', rotatein: '', fadein: '', fadeout: '' })
+        this.setState({ slideup: '', slidein: '', panin: '', rotatein: '', fadein: '', fadeout: '', rotate: '' })
     }
 
     componentDidUpdate = () => {
@@ -68,6 +69,7 @@ class Router extends Component {
                         rotatein={this.state.rotatein}
                         fadein={this.state.fadein}
                         fadeout={this.state.fadeout}
+                        rotate={this.state.rotate}
                         currentPage={this.state.currentPage}
                         setPage={this.setPage}
                     />
