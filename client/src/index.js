@@ -18,10 +18,8 @@ class Router extends Component {
             visibility: 'hidden'
         }
     }
-    // add more
     // Lifecycle
     componentDidMount = () => {
-        let path = window.location.pathname
         //sets state animations so they trigger on load
         this.setState(
             {
@@ -46,7 +44,6 @@ class Router extends Component {
     }
 
     componentDidUpdate = () => {
-        let path = window.location.pathname
         if (this.state.currentPage !== window.location.pathname) {
             this.setState({
                 currentPage: window.location.pathname,
