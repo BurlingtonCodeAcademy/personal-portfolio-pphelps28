@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Contact toggleContact={this.props.toggleContact} visibility={this.props.visibility} />
+        <Contact toggleContact={this.props.toggleContact} visibility={this.props.visibility} sendContact={this.props.sendContact}/>
         <Navbar currentPage={this.props.currentPage} highlightHeader={this.props.highlightHeader} setPage={this.props.setPage} toggleContact={this.props.toggleContact} />
         <div id="content-area" >
           < Route exact path='/'>

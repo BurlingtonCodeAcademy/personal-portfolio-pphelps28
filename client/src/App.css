@@ -152,6 +152,15 @@ p {
     margin: 20px 0px 20px 0px
 }
 
+em:hover {
+    font-weight: bold;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: none;
+}
+
 /* about page */
 
 .about-text {

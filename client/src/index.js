@@ -35,8 +35,10 @@ class Router extends Component {
     }
     toggleContact = () => {
         this.state.visibility === 'hidden' ? this.setState({ visibility: 'visible' }) : this.setState({ visibility: 'hidden' })
-
-
+    }
+    sendContact = () => {
+        alert('message sent! (this is a lie)')
+        this.setState({ sentMessageVisibility: 'visible' })
     }
     //removes animations so they will re-trigger on next render
     componentWillUnmount = () => {
@@ -75,8 +77,10 @@ class Router extends Component {
                         rotate={this.state.rotate}
                         currentPage={this.state.currentPage}
                         visibility={this.state.visibility}
+
                         setPage={this.setPage}
                         toggleContact={this.toggleContact}
+                        sendContact={this.sendContact}
 
                     />
                 </BrowserRouter>
