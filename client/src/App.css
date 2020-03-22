@@ -9,10 +9,7 @@
 
 body {
     background-color: rgb(15, 15, 15);
-}
-
-#main {
-    margin-left: 10px;
+    margin-left: calc(10px)
 }
 
 a {
@@ -173,11 +170,18 @@ li:hover {
 #heading-wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0px;
 }
 
 #about-heading {
-    padding-bottom: 20px;
     font-size: 3em;
+}
+
+#mobile-about-image {
+    width: 5em;
+    border-radius: 5%;
+    display: none;
+    transition: display 1s ease-in;
 }
 
 #about-heading2 {
@@ -247,14 +251,13 @@ li:hover {
     width: 60vw;
     background-color: rgba(37, 37, 37, 0.897);
     position: fixed;
-    margin: 10vh 20vw 10vh 20vw;
+    margin: 10vh 20vw 10vh calc(20vw - 10px);
     border-radius: 1%;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     opacity: .95;
 }
 
@@ -306,12 +309,9 @@ li:hover {
     #background-layer {
         opacity: 0;
     }
-}
-
-@media screen and (max-width:525px) {
-    #header {
-        visibility: hidden;
-        opacity: 0;
+    #mobile-about-image {
+        border-radius: 5%;
+        display: inline;
     }
 }
 

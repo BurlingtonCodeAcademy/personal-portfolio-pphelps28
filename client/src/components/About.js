@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-
 class About extends Component {
     render() {
         return (
             <>
                 <div id="page-wrapper" className={this.props.animation}>
-                    <h1 id="about-heading">This is <a href="https://www.linkedin.com/in/paul-w-phelps/" rel="noopener noreferrer" alt="linkedIn profile" target="_blank"><strong>me</strong></a>.<br /></h1>
+                    <h1 id="about-heading">This is <a href="https://www.linkedin.com/in/paul-w-phelps/" rel="noopener noreferrer" alt="linkedIn profile" target="_blank"><strong>me</strong></a>.<img id="mobile-about-image"src={this.props.image} alt="profile"/><br /></h1>
                     <p className="about-text ">
                         <i>I'm a career changer.</i>
                     </p>

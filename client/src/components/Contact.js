@@ -21,8 +21,8 @@ export default function Contact(props) {
                     <div id="contact-header">Questions? Coffee? Reach out.</div>
                     <form id="contact-form">
                         <div id="name-row">
-                            <TextField id="firstName" label="First Name" variant="filled" required={true} />
-                            <TextField id="lastName" label="Last Name" variant="filled" required={true}/>
+                            <TextField id="firstName" label="First Name" variant="filled" />
+                            <TextField id="lastName" label="Last Name" variant="filled" />
                         </div>
                         <TextField
                             id="message-field"
