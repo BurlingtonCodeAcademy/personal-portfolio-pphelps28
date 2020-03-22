@@ -14,7 +14,8 @@ class Router extends Component {
             rotatein: '',
             fadein: '',
             fadeout: '',
-            rotate: ''
+            rotate: '',
+            visibility: 'hidden'
         }
     }
     // add more
@@ -33,6 +34,11 @@ class Router extends Component {
                 this.setState({ currentPage: window.location.pathname })
             }
         }
+    }
+    toggleContact = () => {
+        this.state.visibility === 'hidden' ? this.setState({ visibility: 'visible' }) : this.setState({ visibility: 'hidden' })
+
+
     }
     //removes animations so they will re-trigger on next render
     componentWillUnmount = () => {
@@ -71,7 +77,10 @@ class Router extends Component {
                         fadeout={this.state.fadeout}
                         rotate={this.state.rotate}
                         currentPage={this.state.currentPage}
+                        visibility={this.state.visibility}
                         setPage={this.setPage}
+                        toggleContact={this.toggleContact}
+
                     />
                 </BrowserRouter>
             </div>

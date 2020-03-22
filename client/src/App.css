@@ -81,6 +81,7 @@ emphasis:hover {
     z-index: 20;
     transition: opacity .2s ease-in;
     border-bottom: 1px solid rgb(216, 191, 216);
+    min-width: 150px;
     width: calc(95vw - 650px);
 }
 
@@ -164,7 +165,7 @@ p {
 
 #about-heading2 {
     font-size: 1.5em;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 /* work page */
@@ -210,6 +211,76 @@ p {
 #fine-print {
     font-size: .6em;
     padding: 5px;
+}
+
+/* Contact Modal Form */
+
+#overlay {
+    z-index: 1000;
+    background-color: rgba(15, 15, 15);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+    visibility: hidden;
+}
+
+#contact-modal {
+    height: 80vh;
+    width: 60vw;
+    background-color: rgba(37, 37, 37, 0.897);
+    position: fixed;
+    margin: 10vh 20vw 10vh 20vw;
+    border-radius: 1%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    opacity: .95;
+}
+
+#send-button {
+    margin: 10px;
+}
+
+#close-modal {
+    position: relative;
+}
+
+#contact-header {
+    color: rgb(218, 106, 218);
+    font-size: 1.5em;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#name-row {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+}
+
+#firstName {
+    background-color: whitesmoke;
+}
+
+#lastName {
+    background-color: whitesmoke;
+}
+
+#message-field {
+    width: calc(50vw - 20px);
+    background-color: whitesmoke;
+}
+
+#by-email {
+    font-size: .8em;
 }
 
 /* Media Queries */
@@ -277,7 +348,7 @@ p {
 }
 
 .rotatein {
-    animation: rotatein 1.5s
+    animation: rotatein 1s
 }
 
 @keyframes rotatein {

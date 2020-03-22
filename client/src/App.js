@@ -6,6 +6,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Work from './components/Work'
 import Play from './components/Play';
+import Contact from './components/Contact'
 import Background from './components/Background'
 import homeImage from './images/home.svg'
 import aboutImage from './images/about.jpg'
@@ -16,7 +17,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <Navbar currentPage={this.props.currentPage} highlightHeader={this.props.highlightHeader} setPage={this.props.setPage} />
+        <Contact toggleContact={this.props.toggleContact} visibility={this.props.visibility} />
+        <Navbar currentPage={this.props.currentPage} highlightHeader={this.props.highlightHeader} setPage={this.props.setPage} toggleContact={this.props.toggleContact} />
         <div id="content-area" >
           < Route exact path='/'>
             <Background animation={this.props.panin} image={homeImage} />
@@ -28,17 +30,12 @@ class App extends Component {
           </Route>
           <Route path='/work'>
             <Background animation={this.props.rotatein} image={workImage} />
-            <Work animation={this.props.fadeout} />
+            <Work animation={this.props.slideup} />
           </Route>
           <Route path='/play'>
-            <Background animation={this.props.rotate} image={playImage}/>
-            <Play animation={this.props.slidein}/>
+            <Background animation={this.props.rotate} image={playImage} />
+            <Play animation={this.props.slidein} />
           </Route>
-          <Route path='/contact'>
-            <Background />
-
-          </Route>
-
         </div>
       </>
     );
