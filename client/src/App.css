@@ -117,6 +117,39 @@ emphasis:hover {
     padding-bottom: 30px;
 }
 
+/* Footer */
+
+#footer-wrapper {
+    color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    bottom: 0;
+    margin-left: calc(6vw - 25px);
+    margin-top: 0px;
+    background-color: rgba(255, 158, 13, 0.753);
+    border-radius: 5%;
+    opacity: .3;
+}
+
+.footer-item {
+    margin: 5px;
+    width: calc(2vh + 10px);
+    opacity: .3;
+}
+
+.footer-item:hover {
+    opacity: 1
+}
+
+#footer-wrapper:hover {
+    opacity: 1;
+    background-color: rgb(255, 158, 13)
+}
+
 /* Page content */
 
 /* Home Page */
@@ -329,6 +362,18 @@ li:hover {
     }
     .header-item {
         margin-right: 20px;
+    }
+    #footer-wrapper {
+        opacity: 1;
+        background-color: rgb(255, 158, 13);
+        padding: 5px
+    }
+    .footer-item {
+        opacity: 1;
+        width: calc(2vh + 15px);
+    }
+    #content-area {
+        margin-bottom: 20px;
     }
 }
 
