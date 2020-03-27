@@ -77,7 +77,6 @@ class Router extends Component {
                         rotate={this.state.rotate}
                         currentPage={this.state.currentPage}
                         visibility={this.state.visibility}
-
                         setPage={this.setPage}
                         toggleContact={this.toggleContact}
                         sendContact={this.sendContact}

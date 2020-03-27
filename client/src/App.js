@@ -28,7 +28,7 @@ class App extends Component {
           </Route >
           <Route path='/about'>
             <Background animation={this.props.fadein} image={aboutImage} />
-            <About animation={this.props.slideup} image={aboutImage} />
+            <About animation={this.props.slideup} image={aboutImage} toggleContact={this.props.toggleContact} />
           </Route>
           <Route path='/work'>
             <Background animation={this.props.rotatein} image={workImage} />
