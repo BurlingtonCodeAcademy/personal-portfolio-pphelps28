@@ -1,0 +1,480 @@
+@import url(//db.onlinewebfonts.com/c/6ecff1acfc72a3653c6b2ff78e7f6b9c?family=Apple+Symbols);
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', 'Noto Sans', 'Work Sans', sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    margin-left: calc(10px)
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+em {
+    color: rgb(250, 16, 250);
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+li {
+    list-style-type: none;
+}
+
+em.about {
+    color: rgb(126, 145, 18);
+}
+
+emphasis {
+    /* color: rgba(236, 86, 0, 0.979); */
+    color: rgb(255, 158, 13);
+    font-weight: 220;
+    font-size: .95em;
+}
+
+emphasis:hover {
+    transform: scale(1.5);
+}
+
+.header-item {
+    margin: 15px 60px 15px 0px;
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+.header-item:hover {
+    color: rgb(255, 158, 13);
+    transform: scale(1.02);
+}
+
+#background-layer {
+    margin-left: calc(50vw - 50px);
+    width: calc(90vw - 650px);
+    margin-top: 60px;
+    height: calc(100vh - 150px);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 20%;
+    transition: opacity .5s ease-in;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 60px;
+    width: calc(90vw);
+    color: rgb(245, 245, 245);
+    font-size: 16px;
+    padding-left: calc(6vw - 30px);
+    background-color: rgb(15, 15, 15);
+    opacity: .85;
+    z-index: 20;
+    transition: opacity .2s ease-in;
+    border-bottom: 1px solid rgb(216, 191, 216);
+    min-width: 150px;
+    width: calc(95vw - 650px);
+}
+
+#navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    padding: 10px 55px 15px 0;
+}
+
+#home {
+    margin-left: 0px;
+}
+
+#contact:hover {
+    cursor: pointer;
+}
+
+#content-area {
+    padding-left: calc(6vw - 30px);
+    display: flex;
+    flex-direction: column;
+    width: calc(300px + 11vw);
+    justify-content: flex-end;
+    padding-top: 10vh;
+}
+
+#page-wrapper {
+    padding-top: 30px;
+    color: whitesmoke;
+    padding-bottom: 30px;
+}
+
+/* Footer */
+
+#footer-wrapper {
+    color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    bottom: 0;
+    margin-left: calc(6vw - 25px);
+    margin-top: 0px;
+    background-color: rgba(255, 158, 13, 0.753);
+    border-radius: 5%;
+    opacity: .3;
+}
+
+.footer-item {
+    margin: 5px;
+    width: calc(2vh + 10px);
+    opacity: .3;
+}
+
+.footer-item:hover {
+    opacity: 1
+}
+
+#footer-wrapper:hover {
+    opacity: 1;
+    background-color: rgb(255, 158, 13)
+}
+
+/* Page content */
+
+/* Home Page */
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    padding: 10px 0 0 0;
+}
+
+.small-heading {
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+
+.large-heading {
+    padding-bottom: 20px;
+    font-size: 3.5em;
+}
+
+.main-text {
+    font-size: 1.2em;
+    color: rgba(245, 245, 245, 0.788);
+    line-height: 1.6;
+}
+
+.inline-link {
+    margin: 20px 0px 20px 0px
+}
+
+em:hover {
+    font-weight: bold;
+}
+
+li:hover {
+    font-weight: bold;
+    cursor: none;
+}
+
+/* about page */
+
+.about-text {
+    font-size: 1.1em;
+    color: rgba(245, 245, 245, 0.87);
+    line-height: 1.4;
+    margin: 10px 0 10px 0;
+}
+
+#heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+#about-heading {
+    font-size: 3em;
+}
+
+#mobile-about-image {
+    width: 5em;
+    border-radius: 5%;
+    display: none;
+    transition: display 1s ease-in;
+}
+
+#about-heading2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+/* work page */
+
+#skills-section {
+    display: flex;
+    justify-content: space-between;
+    opacity: .95;
+    padding: 0px 50px 0px 0px;
+    border-radius: 5%;
+}
+
+#skills-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#skills-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.list-header {
+    color: rgb(240, 37, 240);
+}
+
+/* Play Page */
+
+#play-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    line-height: 1.3;
+}
+
+#fine-print {
+    font-size: .6em;
+    padding: 5px;
+}
+
+/* Contact Modal Form */
+
+#overlay {
+    z-index: 1000;
+    background-color: rgba(15, 15, 15);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+    visibility: hidden;
+}
+
+#contact-modal {
+    height: 80vh;
+    width: 60vw;
+    background-color: rgba(37, 37, 37, 0.897);
+    position: fixed;
+    margin: 10vh 20vw 10vh calc(20vw - 10px);
+    border-radius: 1%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: .95;
+}
+
+#send-button {
+    margin: 10px;
+}
+
+#close-modal {
+    position: relative;
+}
+
+#contact-header {
+    color: rgb(218, 106, 218);
+    font-size: 1.5em;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#name-row {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+}
+
+#firstName {
+    background-color: whitesmoke;
+}
+
+#lastName {
+    background-color: whitesmoke;
+}
+
+#message-field {
+    width: calc(50vw - 20px);
+    background-color: whitesmoke;
+}
+
+#by-email {
+    font-size: .8em;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:750px) {
+    #background-layer {
+        opacity: 0;
+    }
+    #mobile-about-image {
+        border-radius: 5%;
+        display: inline;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+    #header {
+        visibility: visible;
+        opacity: 1;
+        flex-direction: column;
+        width: 80vw;
+        margin: 0;
+    }
+    .header-item {
+        margin-right: 20px;
+    }
+    #footer-wrapper {
+        opacity: 1;
+        background-color: rgb(255, 158, 13);
+        padding: 5px
+    }
+    .footer-item {
+        opacity: 1;
+        width: calc(2vh + 15px);
+    }
+    #content-area {
+        margin-bottom: 20px;
+    }
+}
+
+/* animations */
+
+@keyframes slidein {
+    0% {
+        transform: translateX(10%);
+        transform: translateY(12%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+}
+
+.slidein {
+    animation: slidein 1.5s;
+}
+
+@keyframes slideup {
+    0% {
+        transform: translatex(-50%) translatey(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(0%) translateY(0%);
+        opacity: 1;
+    }
+}
+
+.slideup {
+    animation: slideup 1s;
+}
+
+@keyframes panin {
+    0% {
+        width: calc(0px);
+    }
+    40% {
+        width: calc(0px)
+    }
+    100% {
+        width: calc(90vw - 650px);
+    }
+}
+
+.panin {
+    animation: panin 1.5s
+}
+
+.rotatein {
+    animation: rotatein 1s
+}
+
+@keyframes rotatein {
+    0% {
+        transform: translatex(200%) translatey(15%) rotate(20deg);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px)
+    }
+}
+
+.rotate {
+    animation: rotate 20s linear infinite;
+    background-position: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fadein {
+    animation: fadein 1s
+}
+
+@keyframes fadein {
+    0% {
+        transform: translatex(-200%) translatey(15%) rotate(20deg);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px)
+    }
+}
+
+.fadeout {
+    animation: fadein 1.5s
+}
+
+@keyframes fadeout {
+    0% {
+        transform: translatex(200%) translatey(15%) rotate(50deg);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px)
+    }
+}
