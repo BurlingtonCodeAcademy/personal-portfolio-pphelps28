@@ -14,7 +14,6 @@ class Home extends Component {
                     <p className="main-text">Reads <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" alt="MDN Javascript docs" target="_blank" rel="noopener noreferrer">MDN</a> for fun.
         </p>
                     <div className="inline-link"><Link to='/about'><em>Learn More.</em> </Link></div>
-
                 </div>
             </>
         );

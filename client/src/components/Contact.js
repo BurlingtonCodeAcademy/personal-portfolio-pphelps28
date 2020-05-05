@@ -20,7 +20,7 @@ export default function Contact(props) {
                 <div id="contact-modal">
                     <div id="contact-header">Questions? Coffee? Reach out.</div>
                     <br />
-                    <div id="by-email"><a href="/"><emphasis> p.w.phelps28@mail.com</emphasis></a></div>
+                    <div id="by-email"><a href="mailto:p.w.phelps28@gmail.com"><em style={{ color: "rgb(255, 158, 13)" }}> p.w.phelps28@mail.com</em></a></div>
                     <div id="fine-print">Based in Winooski, VT, USA</div>
                     <br />
                     <Button id="close-button" variant="outlined" color="secondary" onClick={props.toggleContact}>close</Button>

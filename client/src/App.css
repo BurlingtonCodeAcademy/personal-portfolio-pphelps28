@@ -76,7 +76,7 @@ emphasis:hover {
     width: calc(90vw);
     color: rgb(245, 245, 245);
     font-size: 16px;
-    padding-left: calc(6vw - 30px);
+    margin-left: calc(6vw - 30px);
     background-color: rgb(15, 15, 15);
     opacity: .85;
     z-index: 20;
@@ -87,10 +87,10 @@ emphasis:hover {
 }
 
 #fine-print-2 {
-    font-size: 8px;
+    font-size: 10px;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 10px;
 }
 
 #navbar-items {
@@ -229,8 +229,24 @@ li:hover {
     margin-top: 15px;
 }
 
+.github-link {
+    margin-top: 5px;
+    width: 10px;
+}
+
+.github-image {
+    width: 25px;
+}
+
+#disclaimer {
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(239, 250, 142);
+}
+
 /* work page */
 
+/* 
 #skills-section {
     display: flex;
     justify-content: space-between;
@@ -257,6 +273,41 @@ li:hover {
 
 .list-header {
     color: rgb(240, 37, 240);
+} */
+
+/* Code Page */
+
+.gif {
+    width: 100%;
+}
+
+.code-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-left: 0px;
+    border-bottom: 1px solid rgb(216, 191, 216);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+.code-desc-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.code-link {
+    color: rgb(255, 158, 13)
+}
+
+.code-title {
+    color: rgba(250, 16, 250, 0.884);
+    margin-top:5px;
 }
 
 /* Play Page */
@@ -269,10 +320,6 @@ li:hover {
     line-height: 1.3;
 }
 
-#fine-print {
-    font-size: .6em;
-    padding: 5px;
-}
 
 /* Contact Modal Form */
 
@@ -289,7 +336,7 @@ li:hover {
 #contact-modal {
     height: 80vh;
     width: 60vw;
-    background-color: rgba(15,15,15);
+    background-color: rgba(15, 15, 15);
     position: fixed;
     margin: 10vh 20vw 10vh calc(20vw - 10px);
     border-radius: 1%;
@@ -381,6 +428,9 @@ li:hover {
     }
     #content-area {
         margin-bottom: 20px;
+    }
+    #fine-print-2{
+        bottom:0;
     }
 }
 
