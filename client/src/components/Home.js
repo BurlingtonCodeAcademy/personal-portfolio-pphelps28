@@ -13,7 +13,7 @@ class Home extends Component {
                     <p className="main-text">Teaching Assistant at <a href="https://burlingtoncodeacademy.com/" alt="burlington code academy home page" target="_blank" rel="noopener noreferrer"><emphasis>Burlington Code Academy</emphasis></a></p>
                     <p className="main-text">Reads <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" alt="MDN Javascript docs" target="_blank" rel="noopener noreferrer">MDN</a> for fun.
         </p>
-                    <div className="inline-link"><Link to='/about'><emphasis>Learn More.</emphasis> </Link><em>Dare ya.</em></div>
+                    <div className="inline-link"><Link to='/about'><em>Learn More.</em> </Link></div>
 
                 </div>
             </>

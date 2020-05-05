@@ -10,16 +10,16 @@ import Contact from './components/Contact'
 import Background from './components/Background'
 import Footer from './components/Footer'
 import homeImage from './images/home.svg'
-import aboutImage from './images/about.png'
+import aboutImage from './images/About.jpg'
 import workImage from './images/work.png'
 import playImage from './images/play.svg'
-
 class App extends Component {
   render() {
     return (
       <>
         <Contact toggleContact={this.props.toggleContact} visibility={this.props.visibility} sendContact={this.props.sendContact} />
         <Navbar currentPage={this.props.currentPage} highlightHeader={this.props.highlightHeader} setPage={this.props.setPage} toggleContact={this.props.toggleContact} />
+        <div id="fine-print-2" className="header-item">Made with 💓 by Paul Phelps</div>
         <Footer />
         <div id="content-area" >
           < Route exact path='/'>
