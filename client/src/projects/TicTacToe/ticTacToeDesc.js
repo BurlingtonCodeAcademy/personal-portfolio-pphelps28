@@ -1,2 +1,2 @@
-const ticTacToeDesc = ""
+const ticTacToeDesc = 'This is a standard Tic Tac Toe game and one of my first attempts at DOM manipulation. I had a blast figuring out the logic behind identifying a win condition, and even more designing an AI to play against. Without writing a min/max function to foresee every best case scenario (something I had no concept of at the time of making it,) I wound up having to account for multiple edge cases, one of which eluded me in the final project.  I have a working second iteration in development, but currently this is the one deployed. Plus, I like the idea that the player has SOME chance to beat the computer, albeit small.'
 export default ticTacToeDesc

@@ -1,2 +1,2 @@
-const phbQuickDesc = "PHB quick description!"
+const phbQuickDesc = "This one is a personal project of mine!  I'm very proud of it and use it constantly! I came across a free API for D&D resources, and decided that, as a way to work on ajax requests, I would make a simple web app that retrieves and displays information I might need when playing! It also proved to be a great time to delve into jQuery, which I used to handle the aforementioned ajax. This was the result of my labor; still a work in progress, as most things are, but I'm very proud of it. Feel free to use, of course 😊 "
 export default phbQuickDesc

@@ -1,2 +1,2 @@
-const textAdventureDesc = ""
+const textAdventureDesc = 'This one was just fun.  Really helped solidify OOP concepts and Class inheritance. It\'s on the command line, so if you want to play it, follow the github link below!  There are a few npm packages you might need to install, like chalk (How I gave a command-line application all those fancy colors), but other than that it should be pretty plug-and-play.  Have fun if you do!'
 export default textAdventureDesc

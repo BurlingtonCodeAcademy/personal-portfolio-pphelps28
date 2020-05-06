@@ -1,2 +1,2 @@
-const portfolioDesc = ""
+const portfolioDesc = 'I deliberated whether or not to show my previous attempt at a portfolio for a while, but then I thought, "well, it definitely shows progress!". This was built with vanilla JS, HTML and CSS, with animation handled by a few native jQuery methods. If you look, you can see my tic tac toe project I listed just above this! It was also an attempt to host somewhere other than heroku, for no other purpose than varitey.  This one wound up on github pages.'
 export default portfolioDesc

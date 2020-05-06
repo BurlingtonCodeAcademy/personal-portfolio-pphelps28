@@ -1,2 +1,2 @@
-const geoDesc = "NOT CURRENTLY DEPLOYED"
+const geoDesc = '"Geo Vermonter" is an adaptation of the popular geoguessr browser game.  In it, you are randomly placed on a map at street-level view (think google maps street-view). The player can then navigate around the map at that level, with their score being lowered with every action. At any point, the player may guess where they are. Geo Vermonter is localized to (you guessed it) Vermont, and the player need oly guess the county. Working with the Leaflet\'s react library took some getting used to, but their documentation proved to be more than enough. Working with map layers and polygon triangulation was a lot of fun too! '
 export default geoDesc

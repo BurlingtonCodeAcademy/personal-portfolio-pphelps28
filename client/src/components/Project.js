@@ -9,6 +9,7 @@ export default function Project(props) {
                 <div class="code-desc-content">{props.description}</div>
                 <a className="code-link" href={props.link}>{props.linkName}</a>
                 <a className="github-link" href={props.githubLink}>{props.githubLink ? <img className="github-image" src={github} /> : null}</a>
+                {props.lastComponent ? <a href="#"><button id="button-to-top">Back to top</button></a> : null}
             </div>
         </div>
     )

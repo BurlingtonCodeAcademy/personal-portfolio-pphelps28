@@ -7,6 +7,114 @@
     color: whitesmoke;
 }
 
+/* animations */
+
+@keyframes slidein {
+    0% {
+        transform: translateX(10%);
+        transform: translateY(12%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+}
+
+.slidein {
+    animation: slidein 1.5s;
+}
+
+@keyframes slideup {
+    0% {
+        transform: translatex(-50%) translatey(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(0%) translateY(0%);
+        opacity: 1;
+    }
+}
+
+.slideup {
+    animation: slideup 1s;
+}
+
+@keyframes panin {
+    0% {
+        width: calc(0px);
+    }
+    40% {
+        width: calc(0px)
+    }
+    100% {
+        width: calc(428px);
+    }
+}
+
+.panin {
+    animation: panin 1.5s
+}
+
+.rotatein {
+    animation: rotatein 1s
+}
+
+@keyframes rotatein {
+    0% {
+        transform: translatex(200%) translatey(15%) rotate(20deg);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px);
+        opacity: 1;
+    }
+}
+
+.rotate {
+    animation: rotate 7s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translatey(-100%) rotate(0deg) scale(.5);
+        opacity: .1;
+    }
+    50% {
+        transform: rotate(185deg) translatex(-50%) translateY(30%) scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: translatey(100%) rotate() scale(1);
+        opacity: 0
+    }
+}
+
+.fadein {
+    animation: fadein 1s
+}
+
+@keyframes fadein {
+    0% {
+        transform: translatex(-200%) translatey(15%) rotate(20deg);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px)
+    }
+}
+
+.fadeout {
+    animation: fadein 1.5s
+}
+
+@keyframes fadeout {
+    0% {
+        transform: translatex(200%) translatey(15%) rotate(50deg);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px)
+    }
+}
+
 body {
     background-color: rgb(15, 15, 15);
     margin-left: calc(10px)
@@ -73,7 +181,6 @@ emphasis:hover {
     justify-content: space-between;
     position: fixed;
     height: 60px;
-    width: calc(40% + 125px);
     color: rgb(245, 245, 245);
     font-size: 16px;
     margin-left: calc(6vw - 30px);
@@ -112,7 +219,7 @@ emphasis:hover {
     padding-left: calc(6vw - 30px);
     display: flex;
     flex-direction: column;
-    width: calc(300px + 11vw);
+    width: calc(340px + 11vw);
     justify-content: flex-end;
     padding-top: 10vh;
 }
@@ -213,7 +320,7 @@ li:hover {
 }
 
 #about-heading {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 #mobile-about-image {
@@ -228,8 +335,15 @@ li:hover {
     margin-top: 15px;
 }
 
+#about-blurb {
+    border-top: honeydew 1px solid;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
 .github-link {
-    margin-top: 5px;
+    margin: 15px;
+    margin-left: 0;
     width: 10px;
 }
 
@@ -239,15 +353,15 @@ li:hover {
 
 #disclaimer {
     font-size: 10px;
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
     color: rgb(239, 250, 142);
 }
 
 /* work page */
 
-/* 
 #skills-section {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     opacity: .95;
     padding: 0px 50px 0px 0px;
@@ -272,14 +386,10 @@ li:hover {
 
 .list-header {
     color: rgb(240, 37, 240);
-} */
-
-/* Code Page */
-
-.gif {
-    width: 100%;
-    border-radius: 5%;
 }
+
+*/
+/* Code Page */
 
 .code-container {
     display: flex;
@@ -288,7 +398,12 @@ li:hover {
     padding-bottom: 20px;
     padding-left: 0px;
     border-bottom: 1px solid rgb(216, 191, 216);
-    width: calc(35vw + 125px);
+}
+
+.gif {
+    width: 100%;
+    border-radius: 5%;
+    margin-right: 10px;
 }
 
 .description {
@@ -296,6 +411,9 @@ li:hover {
     flex-direction: column;
     justify-content: space-between;
     margin-right: 5px;
+    border-bottom: 1px solid rgb(216, 191, 216);
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .code-desc-content {
@@ -308,17 +426,18 @@ li:hover {
 
 .code-title {
     color: rgba(250, 16, 250, 0.884);
-    margin-top: 5px;
 }
 
-/* Play Page */
+#button-to-top {
+    background-color: rgba(250, 16, 250);
+    margin-bottom: 20px;
+    width: 30%;
+    border-radius: 5%;
+    align-items: center;
+}
 
-#play-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    justify-content: space-between;
-    line-height: 1.3;
+#button-to-top:hover {
+    cursor: pointer;
 }
 
 /* Contact Modal Form */
@@ -334,11 +453,10 @@ li:hover {
 }
 
 #contact-modal {
-    height: 80vh;
-    width: 60vw;
+    height: 100%;
+    width: 100%;
     background-color: rgba(15, 15, 15);
     position: fixed;
-    margin: 10vh 20vw 10vh calc(20vw - 10px);
     border-radius: 1%;
     z-index: 1000;
     display: flex;
@@ -411,7 +529,7 @@ li:hover {
         visibility: visible;
         opacity: 1;
         flex-direction: column;
-        width: 95vw;
+        width: 100%;
         margin: 0;
     }
     #navbar-items {
@@ -438,114 +556,7 @@ li:hover {
         border-radius: 5%;
         opacity: .85;
     }
-}
-
-/* animations */
-
-@keyframes slidein {
-    0% {
-        transform: translateX(10%);
-        transform: translateY(12%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0%);
-        transform: translateY(0%);
-    }
-}
-
-.slidein {
-    animation: slidein 1.5s;
-}
-
-@keyframes slideup {
-    0% {
-        transform: translatex(-50%) translatey(50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translatex(0%) translateY(0%);
-        opacity: 1;
-    }
-}
-
-.slideup {
-    animation: slideup 1s;
-}
-
-@keyframes panin {
-    0% {
-        width: calc(0px);
-    }
-    40% {
-        width: calc(0px)
-    }
-    100% {
-        width: calc(428px);
-    }
-}
-
-.panin {
-    animation: panin 1.5s
-}
-
-.rotatein {
-    animation: rotatein 1s
-}
-
-@keyframes rotatein {
-    0% {
-        transform: translatex(200%) translatey(15%) rotate(20deg);
-    }
-    100% {
-        transform: translatex(0px) translatey(0px);
-        opacity: 1;
-    }
-}
-
-.rotate {
-    animation: rotate 45s linear infinite;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-        opacity: .3;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: .8;
-    }
-    100% {
-        transform: rotate(360deg);
-        opacity: .3;
-    }
-}
-
-.fadein {
-    animation: fadein 1s
-}
-
-@keyframes fadein {
-    0% {
-        transform: translatex(-200%) translatey(15%) rotate(20deg);
-    }
-    100% {
-        transform: translatex(0px) translatey(0px)
-    }
-}
-
-.fadeout {
-    animation: fadein 1.5s
-}
-
-@keyframes fadeout {
-    0% {
-        transform: translatex(200%) translatey(15%) rotate(50deg);
-    }
-    100% {
-        transform: translatex(0px) translatey(0px)
+    #background-layer {
+        width: 0px;
     }
 }

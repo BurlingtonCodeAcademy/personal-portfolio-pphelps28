@@ -1,2 +1,2 @@
-const phelpDesc = ""
+const phelpDesc = 'Like with "Geo Vermonter," PHELP! (My terrible YELP! pun) is a mock web app that simulates a search of restaurants in downtown Burlington, VT. This one was a bit more of a chore than it should have been, namely because the free search engine I was using to get the geoJSON data had a limit on the number of queries any given i.p. address could make. So, with a deadline approaching, I and many other students found it more practical to simply hardcode the coordinates for a number of notable restaurants. Or, as I prefer to say, a "hand-curated list of Burlington\'s finest eateries." Like with Geo Vermonter, this one was good practice for interacting with API endpoints.'
 export default phelpDesc

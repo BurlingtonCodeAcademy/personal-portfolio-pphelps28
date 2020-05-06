@@ -1,2 +1,2 @@
-const phpDesc = ""
+const phpDesc = 'Behold! The fruits of my PHP labor!  I\'m sure this doesn\'t look like much, and admittedly it is fairly rudimentary, but it also marks my first sojourn into the wonderful world of PHP. The result?  A nice little CRUD app. The biggest challenge I found in the transition to PHP from JavaScript is the change in local dev environment. I started using XAMPP, a cross-platform web server solution stack that comes bundled with MySQL and Apache, both of which were needed for this blog page. I also used bootstrap for basic styling. Next up, I\'m looking into Laravel.  It comes up a lot when talking PHP.'
 export default phpDesc

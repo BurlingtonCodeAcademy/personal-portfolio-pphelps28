@@ -1,2 +1,2 @@
-const guessDesc = ""
+const guessDesc = 'This is a simple command line application that uses binary search principles to minimize the number of guesses a computer needs to guess the number a player is thinking of.  There is also a reverse mode, where the player guesses what number the computer is "thinking" of. This was a nice way to familiarize myself with creating interfaces, recursive functions, and the node environment as a whole.'
 export default guessDesc
