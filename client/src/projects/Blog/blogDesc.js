@@ -1,2 +1,2 @@
-const blogDesc = ""
+const blogDesc = "This is a mock blog page created with vanilla JavaScript, HTML5, and CSS as a means of honing fundamentals.  One particularly fun aspect of this project was discovering the Intersection Observer API. It 'provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.' Direct quote from MDN. I sure do love MDN."
 export default blogDesc

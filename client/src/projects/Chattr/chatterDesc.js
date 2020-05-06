@@ -1,2 +1,2 @@
-const chattrDesc = '"Chattr" is a web app I built with a classmate that utilizes the MERN stack.  By fetching from a random name API and storing the name in cookies, the user can keep their anonymous name for as long as they choose. The application polls the database at set intervals to keep the thread live.'
+const chattrDesc = '"Chattr" is a web chat app I built with a classmate that utilizes the MERN stack.  By fetching from a random name API and saving it in cookies, the user can keep their anonymous name for as long as they choose. The application polls the database at set intervals to keep the thread live.'
 export default chattrDesc;
