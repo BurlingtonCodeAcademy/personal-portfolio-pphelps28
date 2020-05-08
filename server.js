@@ -4,6 +4,7 @@ const app = express()
 const port = process.env.PORT || 5000
 const http = require('http')
 const enforce = require('express-sslify')
+
 app.use(express.static(path.resolve('./client/build')))
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
