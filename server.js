@@ -12,6 +12,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.resolve('./client/build/index.html'))
 })
 
-http.createServer(app).listen(app.get('port'), function () {
+http.createServer(app).listen(port, function () {
     console.log("Listening on port: " + port)
 })
