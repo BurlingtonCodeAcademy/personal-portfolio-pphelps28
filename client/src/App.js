@@ -12,7 +12,6 @@ import Footer from './components/Footer'
 import homeImage from './images/home.svg'
 import aboutImage from './images/About.jpg'
 import workImage from './images/work.svg'
-import playImage from './images/play.svg'
 
 class App extends Component {
   render() {
