@@ -6,7 +6,6 @@ import Home from './components/Home'
 import About from './components/About'
 // import Work from './components/Work'
 import Code from './components/Code'
-import Play from './components/Play';
 import Contact from './components/Contact'
 import Background from './components/Background'
 import Footer from './components/Footer'
@@ -34,10 +33,6 @@ class App extends Component {
           <Route path='/code'>
             <Background animation={this.props.rotate} image={workImage} />
             <Code animation={this.props.slidein} />
-          </Route>
-          <Route path='/play'>
-            <Background animation={this.props.rotate} image={playImage} />
-            <Play animation={this.props.slidein} />
           </Route>
         </div>
       </>
